@@ -5,6 +5,7 @@ const NavButtons = {
     "About": "/About",
     "Projects": "/Projects",
     "Resume": "/Resume",
+    "Cats": "/Cats",
     "Github": "https://www.github.com/duncanlynch"
 };
 
@@ -12,7 +13,7 @@ const NavBar = () => {
     return (
         <div id="NavBar" className={`" transition-all ease-in-out drop-shadow-2xl
           bg-gradient-to-r from-[#2e2b30] to-[#171618] duration-150 py-10  w-full flex justify-center h-[20%] "`}>
-            <div className="flex gap-40">
+            <div className="flex justify-center gap-10 ">
                 {Object.entries(NavButtons).map(([key, value]) => (
                     <>
                     <HeaderButton key={key} children={key} href={value}/>

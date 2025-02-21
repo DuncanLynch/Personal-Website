@@ -1,0 +1,27 @@
+
+import axios from "axios";
+
+const FEATURED_URL = "https://api.meow.camera/catHouses/random";
+const CAT_URL = "https://api.meow.camera/catHouse/";
+
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+export async function getCats() {
+    const response = await axios.get(FEATURED_URL, { timeout: 5000 });
+    const cameras = response['data'];
+    return JSON.stringify(cameras);
+}
+
+async function main() {
+    try {
+        const x = await getCats();
+        console.log(x);
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
+main();
