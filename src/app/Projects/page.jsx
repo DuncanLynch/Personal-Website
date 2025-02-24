@@ -7,7 +7,7 @@ const Page = ({}) => {
             duration={"08/24 - 09/24"} 
             desc={"A discord bot designed to bring the Rust+ app's functionality to discord!"}
             url={"https://github.com/DuncanLynch/BumbyBot"} 
-            img={"/placeholderimg.png"}
+            img={"/BUMBYBOT.png"}
             />
         </div>
     );
