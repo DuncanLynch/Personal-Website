@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { getCats } from "@/API/MeowCameraAPI/getCats";
 import Image from "next/image";
+import CatPane from "./CatPane";
 
 const defaultCats = JSON.parse(await getCats());
 const URL = "https://meow.camera/viewer/#";
@@ -12,12 +13,9 @@ export default function CatContainer(){
 
     return (
         <div className=" flex justify-center  py-5" >
-            <div className=" grid grid-cols-2 gap-2 bg-black rounded-lg p-5">
+            <div className=" grid grid-cols-2 gap-5 bg-[#211f22] rounded-lg p-7">
                 {catList.map(cat => 
-                    <div className="border" href={URL + cat['id']}>
-                        <Image src={IMG_URL + cat['id'] + ".jpg"} width={400} height={400} />
-                    <a href={URL + cat['id']} >{cat['name'] +" " + cat['translatedName']}</a>
-                    </div>
+                    <CatPane catName={cat['name']} catTranslatedName={cat['translatedName']} catURL={URL + cat['id']} catIMG={IMG_URL+cat['id'] +".jpg"} />
                 )}
             </div>
         </div>

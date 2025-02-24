@@ -1,7 +1,7 @@
 import { Kanit } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar/NavBar";
-
+import Footer from "@/components/Footer";
 const kanit = Kanit({
   variable: "--font-kanit",
   weight: ["400", "500", "600", "700"],
@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <NavBar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

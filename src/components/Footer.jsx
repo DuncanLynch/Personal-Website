@@ -1,0 +1,15 @@
+'use client'
+export default function Footer()
+{
+    return (
+        <div className="bg-zinc-800 fixed bottom-0 flex items-center justify-center w-full h-[5%]">
+            <footer id="Contacts" className="text-lg text-center"> 
+                Contact me! 
+                <a className="px-2 underline underline-offset-4">duncan@thelynches.com</a> 
+                <a className="px-2 underline underline-offset-4">(713)-540-9149</a> 
+                <button onClick={() => {window.open("https://www.github.com/duncanlynch",'_blank')}} className="px-2 underline underline-offset-4">github.com/duncanlynch</button>
+                <button onClick={() => {window.open("https://www.linkedin.com/in/duncantlynch",'_blank')}} className="px-2 underline underline-offset-4">linkedin.com/in/duncantlynch</button>
+            </footer>
+        </div>
+    );
+}
