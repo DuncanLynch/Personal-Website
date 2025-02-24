@@ -5,19 +5,18 @@ const NavButtons = {
     "About": "/About",
     "Projects": "/Projects",
     "Resume": "/Resume",
-    "Cats": "/Cats",
-    "Github": "https://www.github.com/duncanlynch"
+    "Cats": "/Cats"
 };
 
 const NavBar = () => {
     return (
         <div id="NavBar" className={`" transition-all ease-in-out drop-shadow-2xl
-          bg-gradient-to-r from-[#2e2b30] to-[#171618] duration-150 py-10  w-full flex justify-center h-[20%] "`}>
-            <div className="flex justify-center gap-10 ">
+          bg-gradient-to-r from-[#2e2b30] to-[rgb(23,22,24)] duration-150 py-10  w-full flex justify-center h-[20%] "`}>
+            <div className="flex justify-center lg:gap-8 md:gap-5 sm:gap-2  ">
                 {Object.entries(NavButtons).map(([key, value]) => (
                     <>
                     <HeaderButton key={key} children={key} href={value}/>
-                    {key !== "Github" && (<view key={key + "43"} className=" h-full w-1 rounded-full bg-[#3e3b41] " /> )}
+                    {key !== "Cats" && (<view key={key + "43"} className=" h-full w-1 rounded-full bg-[#3e3b41] " /> )}
                     </>
                 ))}
         </div>
