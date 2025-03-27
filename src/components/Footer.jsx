@@ -2,7 +2,7 @@
 export default function Footer()
 {
     return (
-        <div className="bg-gradient-to-r from-[#2e2b30] to-[rgb(23,22,24)]  fixed bottom-0 flex items-center justify-center w-full h-[5%]">
+        <div className="bg-gradient-to-r from-[#2e2b30] border-t border-stone-500 to-[rgb(23,22,24)]  fixed bottom-0 flex items-center justify-center w-full h-[5%]">
             <footer id="Contacts" className="text-lg text-center"> 
                 Contact me! 
                 <a className="px-2 underline drop-shadow-xl underline-offset-4">duncan@thelynches.com</a> 

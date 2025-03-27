@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: /*#3e3b41;*/ radial-gradient(circle, #7a98eb, #0b1550), url('/noise-texture.png');
+    --background: /*#3e3b41;*/ radial-gradient(circle, #746f79, #3e3b41), url('/noise-texture.png');
     --foreground: #ededed;
   }
 }
